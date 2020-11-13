@@ -56,10 +56,10 @@ def TDMA(N, A, d, phi):
 
 #construct the 2-D array using numpy:
     ###user define###
-startPoint = 0.0
-endPoint = 1.0
-Np = 11
-N = Np - 2
+startPoint = 0.0#the left boundary point
+endPoint = 1.0#the right boundary point
+Np = 11#number of grid points
+N = Np - 2#number of internal grid points
     #################
 dx = (endPoint - startPoint)/(Np-1)
 A = np.zeros((N, N))
